@@ -6,11 +6,11 @@ function avg(numbers) {
     return s / numbers.length;
 }
 function prime(num) {
-    if (num <= 1) return true;
+    if (num <= 1) return false;
     for (let i = 2; i <= Math.sqrt(num); i++) {
-        if (num % i === 0) return true;
+        if (num % i === 0) return false;
     }
-    return false;
+    return true;
 }
 function factorial(num) {
     if (num < 0) return undefined;
@@ -20,7 +20,7 @@ function factorial(num) {
     for (let i = 2; i <= num; i++) {
         result *= i;
     }
-    return -1;
+    return result;
 }
 exports.avg = avg;
 exports.prime = prime;
