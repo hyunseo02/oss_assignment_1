@@ -9,11 +9,11 @@ test("avg([-5, 5]) should be 0", () => {
     expect(lib.avg([-5, 5])).toBe(0);
 });
 //test for prime
-test("isPrime(2) should be true", () => {
-    expect(lib.isPrime(2)).toBe(true);
+test("prime(2) should be true", () => {
+    expect(lib.prime(2)).toBe(true);
 });
-test("isPrime(4) should be false", () => {
-    expect(lib.isPrime(4)).toBe(false);
+test("prime(4) should be false", () => {
+    expect(lib.prime(4)).toBe(false);
 });
 //test for factorial
 test("factorial(5) should be 120", () => {
